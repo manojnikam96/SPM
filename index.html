@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legumes Delivery - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legumes Delivery - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="products-container">
+        <h2>Available Indian Legumes</h2>
+        <div class="products-grid">
+            <div class="product" id="product1">
+                <h3>Toor Dal</h3>
+                <p>Price: ₹100/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <h3>Chana Dal</h3>
+                <p>Price: ₹80/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product3">
+                <h3>Masoor Dal</h3>
+                <p>Price: ₹90/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product4">
+                <h3>Urad Dal</h3>
+                <p>Price: ₹120/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product5">
+                <h3>Moong Dal</h3>
+                <p>Price: ₹110/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product6">
+                <h3>Rajma</h3>
+                <p>Price: ₹130/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product7">
+                <h3>Chickpeas</h3>
+                <p>Price: ₹60/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product8">
+                <h3>Lobia</h3>
+                <p>Price: ₹70/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product9">
+                <h3>Green Gram (Sabut Moong)</h3>
+                <p>Price: ₹100/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product10">
+                <h3>Kidney Beans</h3>
+                <p>Price: ₹150/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product11">
+                <h3>Horse Gram</h3>
+                <p>Price: ₹90/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product12">
+                <h3>Moth Beans</h3>
+                <p>Price: ₹85/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product13">
+                <h3>Black Gram (Sabut Urad)</h3>
+                <p>Price: ₹110/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product14">
+                <h3>Masoor (Whole)</h3>
+                <p>Price: ₹95/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" id="product15">
+                <h3>Pigeon Pea</h3>
+                <p>Price: ₹105/kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <button class="checkout" onclick="goToPayment()">Proceed to Payment</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legumes Delivery - Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Details</h2>
+        <form id="paymentForm">
+            <label for="cardName">Name on Card:</label>
+            <input type="text" id="cardName" name="cardName" required>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
+
+            <label for="expDate">Expiry Date (MM/YY):</label>
+            <input type="text" id="expDate" name="expDate" maxlength="5" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+            <label for="amount">Amount (in ₹):</label>
+            <input type="text" id="amount" name="amount" value="₹500" readonly>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legumes Delivery - Thank You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="thankyou-container">
+        <h2>Thank You for Your Purchase!</h2>
+        <p>Your payment has been successfully processed.</p>
+        <p>We will deliver your Indian legumes soon!</p>
+        <button onclick="goBackHome()">Back to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
